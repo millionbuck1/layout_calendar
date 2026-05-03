@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 
     &:hover {
-      background: #ffbfcb;
+      background: $background;
       transform: translateY(-20px);
     }
   }
@@ -53,13 +53,12 @@ body {
   }
 }
 
-.calendar--month-length-28 .calendar__day:nth-child(29),
-.calendar--month-length-28 .calendar__day:nth-child(30),
-.calendar--month-length-28 .calendar__day:nth-child(31),
-.calendar--month-length-29 .calendar__day:nth-child(30),
-.calendar--month-length-29 .calendar__day:nth-child(31),
-.calendar--month-length-30 .calendar__day:nth-child(31) {
-  display: none;
+@for $length from 28 through 31 {
+  .calendar--month-length-#{$length} {
+    .calendar__day:nth-child(n + #{$length + 1}) {
+      display: none;
+    }
+  }
 }
 
 $days: (

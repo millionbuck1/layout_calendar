@@ -36,7 +36,7 @@ body {
 }
 
 .calendar__day:hover {
-  background: #ffbfcb;
+  background: #eee;
   transform: translateY(-20px);
 }
 
@@ -226,12 +226,19 @@ body {
   font-size: 30px;
 }
 
-.calendar--month-length-28 .calendar__day:nth-child(29),
-.calendar--month-length-28 .calendar__day:nth-child(30),
-.calendar--month-length-28 .calendar__day:nth-child(31),
-.calendar--month-length-29 .calendar__day:nth-child(30),
-.calendar--month-length-29 .calendar__day:nth-child(31),
-.calendar--month-length-30 .calendar__day:nth-child(31) {
+.calendar--month-length-28 .calendar__day:nth-child(n + 29) {
+  display: none;
+}
+
+.calendar--month-length-29 .calendar__day:nth-child(n + 30) {
+  display: none;
+}
+
+.calendar--month-length-30 .calendar__day:nth-child(n + 31) {
+  display: none;
+}
+
+.calendar--month-length-31 .calendar__day:nth-child(n + 32) {
   display: none;
 }
 
