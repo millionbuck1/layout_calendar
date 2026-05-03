@@ -235,39 +235,32 @@ body {
   display: none;
 }
 
-.calendar--mon .calendar__day:first-child,
 .calendar--start-day-mon .calendar__day:first-child {
   margin-left: 0;
 }
 
-.calendar--tue .calendar__day:first-child,
 .calendar--start-day-tue .calendar__day:first-child {
   margin-left: 101px;
 }
 
-.calendar--wed .calendar__day:first-child,
 .calendar--start-day-wed .calendar__day:first-child {
   margin-left: 202px;
 }
 
-.calendar--thu .calendar__day:first-child,
 .calendar--start-day-thu .calendar__day:first-child {
   margin-left: 303px;
 }
 
-.calendar--fri .calendar__day:first-child,
 .calendar--start-day-fri .calendar__day:first-child {
   margin-left: 404px;
 }
 
-.calendar--sat .calendar__day:first-child,
 .calendar--start-day-sat .calendar__day:first-child {
   margin-left: 505px;
 }
 
-.calendar--sun .calendar__day:first-child,
 .calendar--start-day-sun .calendar__day:first-child {
   margin-left: 606px;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */
